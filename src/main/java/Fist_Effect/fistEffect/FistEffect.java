@@ -11,7 +11,7 @@ public final class FistEffect extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         new PunchHandler(this);
-        getCommand("maxim").setExecutor(new MaximEnchant());
+        getCommand("maximenchant").setExecutor(new MaximEnchant());
     }
 
     @Override
