@@ -1,0 +1,10 @@
+name: FistEffect
+version: '1.0-SNAPSHOT'
+main: Fist_Effect.fistEffect.FistEffect
+api-version: '1.21'
+commands:
+  MaximEnchant:
+    description: adds enchants to held sword
+    usage: /maximenchant
+    aliases: max_enchants
+    permission message: You are not strong enough.
