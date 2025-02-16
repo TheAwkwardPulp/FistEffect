@@ -9,6 +9,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.enchantments.Enchantment;
 
 
 public class MaximEnchant implements CommandExecutor{
@@ -28,18 +29,19 @@ public class MaximEnchant implements CommandExecutor{
         }
 
         //Sword Check
-        if (item.getType() != Material.DIAMOND_SWORD || item.getType() != Material.NETHERITE_SWORD) {
-            player.sendMessage("You are not strong enough.");
+        if (item.getType() == Material.DIAMOND_SWORD || item.getType() == Material.NETHERITE_SWORD) {
+            item.addEnchantment(Enchantment.SMITE, 5);
+            item.addEnchantment(Enchantment.SWEEPING_EDGE, 3);
+            item.addEnchantment(Enchantment.LOOTING, 3);
+            item.addEnchantment(Enchantment.FIRE_ASPECT, 2);
+            item.addEnchantment(Enchantment.UNBREAKING, 3);
+            item.addEnchantment(Enchantment.MENDING, 1);
+            player.sendMessage("Now we're talking!");
+
+            return true;
         }
 
-        /*player.getItemInUse().addEnchantment(Enchantment.SWEEPING_EDGE, 5);
-        player.getItemInUse().addEnchantment(Enchantment.LOOTING, 5);
-        player.getItemInUse().addEnchantment(Enchantment.FIRE_ASPECT, 4);
-        player.getItemInUse().addEnchantment(Enchantment.UNBREAKING, 5);
-        player.getItemInUse().addEnchantment(Enchantment.MENDING, 3);*/
-
-        player.sendMessage("Now we're talking!");
-
+        player.sendMessage("You are not strong enough.");
         return true;
     }
 }
