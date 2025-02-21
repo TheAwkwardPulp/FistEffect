@@ -2,7 +2,7 @@ package Fist_Effect.fistEffect;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import Fist_Effect.fistEffect.handlers.PunchHandler;
+import Fist_Effect.fistEffect.handlers.PunchHandler.PunchHandler;
 import Fist_Effect.fistEffect.commands.MaximEnchant;
 
 public final class FistEffect extends JavaPlugin {

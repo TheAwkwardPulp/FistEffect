@@ -1,4 +1,4 @@
-package Fist_Effect.fistEffect.handlers;
+package Fist_Effect.fistEffect.handlers.PunchHandler;
 
 import org.bukkit.Bukkit;
 
