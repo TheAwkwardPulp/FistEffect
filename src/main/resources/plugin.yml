@@ -1,6 +1,6 @@
 name: FistEffect
 version: '1.0-SNAPSHOT'
-main: Fist_Effect.fistEffect.FistEffect
+main: fistEffect.fistEffect.FistEffect
 api-version: '1.21'
 commands:
   MaximEnchant:

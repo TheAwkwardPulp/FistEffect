@@ -1,4 +1,4 @@
-package Fist_Effect.fistEffect.commands;
+package fistEffect.fistEffect.commands;
 
 //Command Imports
 import org.bukkit.command.Command;
